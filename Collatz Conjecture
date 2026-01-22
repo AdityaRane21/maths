@@ -1,1 +1,30 @@
+The Collatz Conjecture is a famous unsolved problem in mathematics that is easy to state but extremely hard to prove.
 
+Take any positive integer n and repeat the following steps:
+if number is odd - multiply it by 3 and add 1
+if number is even - divide by 2
+
+Conjecture:
+No matter which positive integer you start with, the sequence will always eventually reach 1.
+
+Example
+Start with n = 6
+6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+
+Start with n = 11
+11 → 34 → 17 → 52 → 26 → 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+
+For every positive integer at the end we will get a repeated sequence of 4 2 1
+
+This problem is also known as :
+Hailstone Sequence
+Ulam Conjecture
+
+Pseudocode:
+while n != 1:
+    if n is even:
+        n = n / 2
+    else:
+        n = 3*n + 1
+
+Reference - https://youtu.be/094y1Z2wpJg?si=ryeo6vLND-gJprX7 
